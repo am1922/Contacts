@@ -14,7 +14,7 @@ public class UserDataProcessor {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Введите данные в порядке (Фамилия Имя Отчество датарождения номертелефона пол):");
+            System.out.println("Введите данные (Фамилия, Имя, Отчество, дата рождения, номер телефона, пол):");
             String input = scanner.nextLine().trim();
 
             if (input.equalsIgnoreCase("выход")) {

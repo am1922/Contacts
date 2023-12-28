@@ -16,7 +16,7 @@ public class DefaultUserDataValidator implements UserDataValidator {
         }
 
         try {
-            Long.parseLong(user.getPhoneNumber());  // Проверка формата номера телефона
+            Long.parseLong(user.getPhoneNumber());
         } catch (NumberFormatException e) {
             throw new UserDataFormatException("Неверный формат номера телефона. Ожидалось целое беззнаковое число.");
         }
